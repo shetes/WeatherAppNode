@@ -1,0 +1,11 @@
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{convertToDate({ d: dayCast.dt}) | date: dateFormat}}</h3>
+                </div>
+                <div class="panel-body">
+                    Morning temperature: {{convertToStandard({ tempK:dayCast.temp.morn})}} F<br>
+                    Daytime temperature: {{convertToStandard({ tempK:dayCast.temp.day})}} F<br>
+                    Evening temperature: {{convertToStandard({ tempK:dayCast.temp.eve})}} F<br>
+                    Night temperature: {{convertToStandard({ tempK:dayCast.temp.night})}} F
+                </div>
+            </div>
